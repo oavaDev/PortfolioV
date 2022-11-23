@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Source Code Pro Regular';
+  src: url('../fonts/SourceCodePro-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Source Code Pro Bold';
+  src: url('../fonts/SourceCodePro-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Source Code Pro Light';
+  src: url('../fonts/SourceCodePro-Light.ttf');
+}
+body {
+  font-family: 'Source Code Pro Regular';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #181818;
+}
+/*--------------------------- Start of Navbar -----------------------------------*/
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  align-items: center;
+  background-color: #2f2f2f;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgb(251, 251, 251);
+}
+
+.Navbar span,
+h1 {
+  transition: color 0.3s ease 0s;
+}
+
+.Navbar span:hover {
+  cursor: pointer;
+  color: #a1e9ff;
+}
+.Navbar h1:hover {
+  color: #a1e9ff;
+}
+
+.Navbar-photo-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Navbar-photo-container img {
+  margin: auto 1rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+}
+
+.Navbar-photo-container h1 {
+  font-size: 1.5rem;
+  font-family: 'Source Code Pro Light';
+}
+
+.Navbar-links-container {
+  display: flex;
+  column-gap: 2rem;
+  margin-right: 1rem;
+}
+
+/*--------------------------- End of Navbar -----------------------------------*/
+/*--------------------------- Start of Home Section -----------------------------------*/
+.Home {
+  width: 100%;
+  background-color: #181818;
+  min-height: 95vh;
+}
+
+.Home-title {
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.Home-title span {
+  color: #a1e9ff;
+  font-size: 3rem;
+  animation: neon 5s infinite;
+}
+
+@keyframes neon {
+  0%,
+  39%,
+  41%,
+  59%,
+  61%,
+  100% {
+    text-shadow: white 0 0 12px, #a1e9ff 0 0 25px, #a1e9ff 0 0 36px;
+  }
+  40%,
+  60% {
+    text-shadow: none;
+  }
+}
+.Home-text {
+  margin: auto;
+  text-align: justify;
+  width: 50rem;
+  color: #a1e9ff;
+}
