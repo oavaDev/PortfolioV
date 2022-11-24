@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="Navbar">
+    <div id="navbar" class="Navbar">
         <div class="Navbar-photo-container">
             <a target="_blank" href="https://github.com/Cieth/">
                 <img loading="lazy" src="https://avatars.githubusercontent.com/u/83027913?v=4" alt="Omar vega face">
@@ -18,12 +18,14 @@
             <h1>Omar Vega</h1>
         </div>
         <div class="Navbar-links-container">
-            <div><span>Home</span></div>
-            <div><span>About </span></div>
-            <div><span>Projects</span></div>
+            <div><a target="_self" href="#navbar">Home</a></div>
+            <div>
+                <a target="_self" href="#about">About </a>
+            </div>
+            <div><a target="_self" href="#projects">Projects</a></div>
         </div>
     </div>
-    <section class="Home">
+    <section id="home" class="Home">
         <div class="Home-title">
             <span class="Home-title-text"></span>
         </div>
@@ -70,15 +72,39 @@
                         <polyline points="3 7 12 13 21 7" />
                     </svg>
                 </a>
-
             </div>
         </div>
     </section>
-    <section class="About">
+    <section id="about" class="About">
         <div class="About-title">
             <span>These are the technologies I feel comfortable working with</span>
         </div>
-        <div class="About-text"></div>
+        <div class="Technologies">
+            <div class="Technology">
+                <img loading="lazy"
+                    src="https://res.cloudinary.com/dj80e8qqp/image/upload/v1669325023/html_logopng_cqkc46.png"
+                    alt="html">
+            </div>
+            <div class="Technology">
+                <img loading="lazy"
+                    src="https://res.cloudinary.com/dj80e8qqp/image/upload/v1669325022/css_logo_sjrtma.png" alt="css">
+            </div>
+            <div class="Technology">
+                <img loading="lazy"
+                    src="https://res.cloudinary.com/dj80e8qqp/image/upload/v1669325022/javas_logo_jzpu95.png"
+                    alt="javascript">
+            </div>
+            <div class="Technology">
+                <img loading="lazy"
+                    src="https://res.cloudinary.com/dj80e8qqp/image/upload/v1669325022/react_logo_qmlcft.png"
+                    alt="react">
+            </div>
+            <div class="Technology">
+                <img loading="lazy"
+                    src="https://res.cloudinary.com/dj80e8qqp/image/upload/v1669325022/nodejs_logo_bjbphr.png"
+                    alt="nodejs">
+            </div>
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
