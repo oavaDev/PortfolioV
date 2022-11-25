@@ -35,7 +35,16 @@ body {
   box-sizing: border-box;
   background-color: #181818;
 }
-
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
 /*--------------------------- Start of Navbar -----------------------------------*/
 .Navbar {
   display: flex;
@@ -212,13 +221,18 @@ h1 {
 }
 /*--------------------------- End of Home Section -----------------------------------*/
 /*--------------------------- Start of About Section -----------------------------------*/
+
 .About {
   width: 100%;
   background-color: #181818;
   min-height: 80vh;
 }
+.About::before {
+  background-color: #961919;
+  min-height: 80vh;
+}
 .About-title {
-  margin: 4rem auto;
+  margin: 5rem auto;
   text-align: center;
 }
 
@@ -254,4 +268,30 @@ h1 {
 .Technology img {
   width: 10rem;
 }
+#react {
+  display: inline-block;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*--------------------------- End of About Section -----------------------------------*/
+/*--------------------------- Start of project Section -----------------------------------*/
+.Projects {
+  margin-top: 20rem;
+  width: 100%;
+  background-color: #181818;
+  min-height: 80rem;
+}
+.projects-title {
+  text-align: center;
+}
+.projects-title span {
+  color: #a1e9ff;
+  font-size: 2rem;
+  animation: neon 5s infinite;
+}
+/*--------------------------- End of project section -----------------------------------*/
