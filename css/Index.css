@@ -357,10 +357,11 @@ h4 {
 .Me {
   width: 100%;
   background-color: #181818;
-  min-height: 60rem;
+  min-height: 40rem;
   display: flex;
   flex-direction: column;
 }
+
 .Me-img-container {
   margin: 1rem auto;
   display: flex;
@@ -374,11 +375,24 @@ h4 {
   text-align: center;
 }
 
-.Me img {
-  align-items: center;
-  justify-content: center;
-  width: 35rem;
+.Me-img-container img {
+  width: 30rem;
   border-radius: 50%;
 }
-
+@media (max-width: 440px) {
+  .Me-img-container img {
+    width: 25rem;
+  }
+}
+@media (max-width: 360px) {
+  .Me-img-container img {
+    margin: auto;
+    width: 20rem;
+  }
+}
+@media (max-width: 275px) {
+  .Me-img-container img {
+    width: 5rem;
+  }
+}
 /*--------------------------- End of me section -----------------------------------*/
