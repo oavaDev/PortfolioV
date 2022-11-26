@@ -12,6 +12,9 @@
   font-family: 'Source Code Pro Light';
   src: url('../fonts/SourceCodePro-Light.ttf');
 }
+button {
+  cursor: pointer;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -280,8 +283,10 @@ h1 {
 }
 /*--------------------------- End of About Section -----------------------------------*/
 /*--------------------------- Start of project Section -----------------------------------*/
+#projects {
+  margin-bottom: 4rem;
+}
 .Projects {
-  margin-top: 20rem;
   width: 100%;
   background-color: #181818;
   min-height: 80rem;
@@ -294,4 +299,86 @@ h1 {
   font-size: 2rem;
   animation: neon 5s infinite;
 }
+.projects {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+.projects a {
+  text-decoration: none;
+}
+.project {
+  text-align: center;
+  color: #b0edff;
+  background-color: #2f2f2f;
+  max-width: 480px;
+}
+.project h3,
+h4 {
+  animation: neon 6s infinite;
+}
+.project p {
+  color: #3cb1d5;
+  margin: 1rem;
+}
+.project img {
+  width: 30rem;
+}
+.Button {
+  background-color: #a1e9ff;
+  border: 1px solid black;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 10px;
+  color: black;
+  margin: 1rem;
+}
+
+@media (max-width: 440px) {
+  .project img {
+    width: 25rem;
+  }
+}
+@media (max-width: 360px) {
+  .project img {
+    width: 20rem;
+  }
+}
+@media (max-width: 275px) {
+  .project img {
+    width: 15rem;
+  }
+}
 /*--------------------------- End of project section -----------------------------------*/
+/*--------------------------- Start of me section -----------------------------------*/
+.Me {
+  width: 100%;
+  background-color: #181818;
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+}
+.Me-img-container {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.Me-img-container span {
+  margin-top: -5rem;
+  color: #a1e9ff;
+  font-size: 4rem;
+  animation: neon 5s infinite;
+  text-align: center;
+}
+
+.Me img {
+  align-items: center;
+  justify-content: center;
+  width: 35rem;
+  border-radius: 50%;
+}
+
+/*--------------------------- End of me section -----------------------------------*/
